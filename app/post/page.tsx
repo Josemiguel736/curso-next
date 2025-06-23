@@ -1,3 +1,6 @@
+import Link from "next/link"
+import "./Post.css"
+
 export interface Post {
 
     id:number
@@ -17,10 +20,12 @@ async function LoadPost(){
 async function PostPages(){
 
     const data = await LoadPost()
-    return (<div> {data.map(p=>(
+    return (<div className="grid"> {data.map(p=>(
         <div key={p.id}>
+            <Link href={`/post/${p.id}`}>
             <h3>{p.title}</h3>
             <p>{p.body}</p>
+            </Link>
         </div>
     ))}
     </div>)

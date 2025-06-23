@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Navbar from "../components/Navbar";
 import {Roboto} from "next/font/google"
+import "./globals.css"
 
 export const roboto = Roboto({
     weight:["300","500","900"],

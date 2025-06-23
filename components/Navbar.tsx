@@ -1,8 +1,9 @@
 import Link from "next/link";
+import "./navbar.css"
 
 export default function Navbar(){
-    return ( <nav>
-          <h4>Header</h4>
+    return ( <nav className="navbar">
+          <Link href="/">Curso Next.js</Link>
           <ul>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">about</Link></li>

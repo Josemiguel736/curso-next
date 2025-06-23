@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(254, 255, 238);  
+
+    }
+
+body a {
+    text-decoration: none;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
